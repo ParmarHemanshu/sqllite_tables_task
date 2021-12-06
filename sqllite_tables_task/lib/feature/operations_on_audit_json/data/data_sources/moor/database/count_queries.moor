@@ -1,0 +1,23 @@
+
+
+countGeneral: SELECT (SELECT COUNT(*) FROM auditDetailsTables) AS countAuditDetails,
+  (SELECT COUNT(*) FROM scoringTypesTables) AS countScoringTypes,
+  (SELECT COUNT(*) FROM scoringFormulaInfoTables) AS countScoringFormulaInfo,
+  (SELECT COUNT(*) FROM auditScoringTables) AS countAuditScoring,
+  (SELECT COUNT(*) FROM auditEntityTables) AS countAuditEntity,
+  (SELECT COUNT(*) FROM auditQuestionTables) AS countAuditQuestion,
+  (SELECT COUNT(*) FROM auditEntityTypesTables) AS countAuditEntityTypes,
+  (SELECT COUNT(*) FROM auditEntityTypeQuestionsTables) AS countAuditEntityTypeQuestions,
+  (SELECT COUNT(*) FROM auditCorrectiveActionsTables) AS countAuditCorrectiveActions,
+  (SELECT COUNT(*) FROM auditFailureReasonTables) AS countAuditFailureReason,
+  (SELECT COUNT(*) FROM auditAdditionalFieldsTables) AS countAuditAdditionalFields,
+  (SELECT COUNT(*) FROM auditAdditionalFieldTypeValuesTables) AS countAuditAdditionalFieldTypeValues,
+  (SELECT COUNT(*) FROM auditAdditionalFieldEntityTypesTables) AS countAuditAdditionalFieldEntityTypes,
+  (SELECT COUNT(*) FROM sizeTables) AS countSize,
+  (SELECT COUNT(*) FROM auditTeamTaskTables) AS countAuditTeamTask,
+  (SELECT COUNT(*) FROM teamDetailsTables) AS countTeamDetails,
+  (SELECT COUNT(*) FROM userDetailsTables) AS countUserDetails,
+  (SELECT COUNT(*) FROM userPermissionTables) AS countUserPermission,
+  (SELECT COUNT(*) FROM occurrenceScheduleDatesTables) AS countOccurrenceScheduleDates,
+  (SELECT COUNT(*) FROM auditEnforceTimeDataTables) AS countAuditEnforceTimeData,
+  (SELECT COUNT(*) FROM auditGroupsTables) AS countAuditGroups;
